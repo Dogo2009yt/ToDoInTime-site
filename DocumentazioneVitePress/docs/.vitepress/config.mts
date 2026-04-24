@@ -1,0 +1,36 @@
+import { defineConfig } from 'vitepress'
+
+// https://vitepress.dev/reference/site-config
+export default defineConfig({
+  base: '/docs/',
+  ignoreDeadLinks: true,
+  title: "ToDoInTime",
+  description: "A documentation",
+  themeConfig: {
+    // https://vitepress.dev/reference/default-theme-config
+    nav: [
+      { text: 'Home', link: '/' },
+    ],
+
+    sidebar: [
+      {
+        text: 'Basics',
+        items: [
+          { text: 'Getting started', link: '/Getting started' },
+          { text: 'Create task', link: '/Create Task' },
+          { text: 'Edit task', link: '/Edit a Task' }
+        ]
+      },
+      {
+        text: 'Advanced',
+        items: [
+
+        ]
+      },
+    ],
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/dogo2009yt' }
+    ]
+  }
+})

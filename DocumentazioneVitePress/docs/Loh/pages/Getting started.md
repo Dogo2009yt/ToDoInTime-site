@@ -1,0 +1,18 @@
+- Download our app from [github](github.com) for you OS!
+- ## On Windows
+	- Download and execute the setup, it does all of the work for you!
+-
+- ## On Linux
+	- Download the flatpak package
+	- Install flatpak
+	- Open the terminal and execute
+	- ```bash
+	  flatpak install --user ToDoInTime.flatpak
+	  ```
+	- **OR** You can install with Flathub by double clicking the *.flatpak* file
+-
+- ## On Android
+	- Download the *.apk* file
+	- Install following the instructions!
+
+- Once open the app shows you the list of your task and a big add button
