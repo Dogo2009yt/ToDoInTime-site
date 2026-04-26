@@ -18,7 +18,9 @@ export default defineConfig({
         items: [
           { text: 'Getting started', link: '/Getting started' },
           { text: 'Create task', link: '/Create Task' },
-          { text: 'Edit task', link: '/Edit a Task' }
+          { text: 'Edit task', link: '/Edit a Task' },
+          { text: 'Delete task', link: '/Delete a Task' },
+          { text: 'Complete a task', link: '/Complete a Task' },
         ]
       },
       {

@@ -1,11 +1,39 @@
-# Create Task
-- Once Open **ToDoInTime** you can't se many options to do, you don't have any task, sooo **it's time to create a new one! 😝😝**
+# Create a Task
 
-- To create a new task you have to click on the big blue button in the bottom of the screen called **"ADD"**
-  ![addBtn.png](img/addBtn.png)
+Once you open **ToDoInTime**, you may notice that there aren’t many options available yet…  
+That’s because you don’t have any tasks.
 
-- When you click the button, a window appears and you have to insert a **Task title**, a **description** and an **expiration date**\
-  ![SchermataAdd.png](img/SchermataAdd.png)
+👉 So, let’s create your first one!
 
-- Click **"Save Task"** and now you have create a task!
-  ![Task Added.png](img/Task%20Added.png)
+
+## Step 1: Click the Add Button
+
+To create a new task, click the big blue button at the bottom of the screen labeled **"ADD"**.
+
+![img](img/addBtn.png){width=400px}
+
+## Step 2: Fill in Task Details
+
+After clicking the button, a window will appear.  
+Here, you need to enter:
+
+- **Task Title**
+- **Task Description**
+- **Task Expiration Date**
+
+![Add Task Screen](img/SchermataAdd.png){width=400px}
+
+
+## Step 3: Save the Task
+
+Click **"Save Task"** to confirm.
+
+🎉 Your task has now been successfully created!
+
+![Task Added](img/Task%20Added.png){width=400px}
+
+---
+
+## Tip
+
+Try creating multiple tasks to better organize your time and stay productive!
