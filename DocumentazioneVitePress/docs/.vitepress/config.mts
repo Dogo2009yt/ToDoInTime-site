@@ -9,7 +9,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
+      { text: 'Home', link: '../static/index.html' },
     ],
 
     sidebar: [
@@ -32,7 +32,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/dogo2009yt' }
+      { icon: 'github', link: 'https://github.com/Masterpat48/ToDoInTime' }
     ]
   }
 })

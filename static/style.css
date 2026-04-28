@@ -1,11 +1,62 @@
 body {
-    background-color: aquamarine;
+    width: 100%;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content {
+    align-items: center;
+    background: linear-gradient(90deg,#00F6FF 0%, #002EA3 100%);
     display: flex;
+    width: 90%;
+    height: 75vh;
+    border-radius: 5vh;
+    font-family: "Roboto", sans-serif;
+}
+
+.title{
+    width: 50%;
+    position: relative;
+    left:2vw;
+    color:white;
+    text-align: center;
+    justify-content: left;
+}
+
+.contentImage{
+    justify-content: center;
+    text-align: center;
+}
+.contentImage img{
+    width: 70%;
 }
 
 .foot {
-    background-color: rgba(255, 255, 255, 0.2);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 8vh;
+    background: linear-gradient(90deg,rgba(1, 133, 203, 1) 0%, rgba(0, 46, 163, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foot h5{
+    position: relative;
+    color: white;
+    left: 3vh;
+}
+
+.foot img{
+    position: relative;
+    right: 5vh;
+}
+
+.foot div{
+    background-color: white;
 }
