@@ -12,6 +12,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>ToDoInTime</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common.css">
     <link rel="icon" href="img/icon.svg">
 </head>
 
@@ -19,7 +20,7 @@
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg sticky-top bg-black" data-bs-theme="dark" style="height: 10vh;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="img/icon.svg" alt="Logo" style="height: 8vh; border-radius: 20%;">
                 ToDoInTime</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -30,13 +31,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="aboutus.html">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Download</a>
+                        <a class="nav-link" href="download.html">Download</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/docs/index.html">Docs</a>
@@ -50,15 +51,17 @@
         <!--Container centrale-->
         <div class="content">
             <div class="title">
-                <h1>ToDoInTime</h1>
+                <h1 class="desktop">ToDoInTime</h1>
+                <h1 class="mobile">ToDo<br>In<br>Time</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab cum nisi aut similique quisquam
                     excepturi voluptate, velit ea soluta nemo reiciendis quibusdam earum atque maxime, facilis
                     voluptates libero laborum quia accusamus? Ex sed quo excepturi libero voluptatem tempore nisi? Natus
                     cum a at facilis iusto rem tenetur earum nostrum consequatur!</p>
-                <button type="button" class="btn btn-primary">Download now!</button>
+                <button type="button" class="btn btn-primary" onclick="window.location.href = 'download.html'">Download now!</button>
             </div>
             <div class="contentImage"><img src="img/dispositivi.png" alt="dispositivi"></div>
         </div>
+
         <!--Cards-->
         <h1 class="cardsTitle">Why use ToDoInTime?</h1>
         <div class="cardContainer">
@@ -72,6 +75,36 @@
                 <h4>100% free, secure and open source</h3>
             </div>
         </div>
+
+        <!--Cards carousel-->
+        <div id="carouselExample" class="carousel carousel-fade" data-bs-ride="carousel" style="z-index: 0;">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <h4>Notification in real time</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <h4>Fast and simple to use</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <h4>100% free, secure and open source</h3>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black; position: relative; left: 1vh;"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black; position: relative; right: 1vh;"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
         <!--GitHub Part-->
         <div class="contentG">
             <h1 class="gTitle">Check us on Github</h1>

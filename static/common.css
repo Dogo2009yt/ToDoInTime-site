@@ -1,0 +1,41 @@
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.foot {
+    position: sticky;
+    bottom: 0;
+    width: 100vw;
+    height: 8vh;
+    background: linear-gradient(90deg,rgba(1, 133, 203, 1) 0%, rgba(0, 46, 163, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foot h5{
+    position: relative;
+    color: white;
+    left: 3vh;
+}
+
+.foot img{
+    position: relative;
+    right: 5vh;
+}
+
+.foot div{
+    background-color: white;
+}
+
+.navbar-collapse {
+    margin-top: 0;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #000;
+        padding: 1rem;
+    }
+}
