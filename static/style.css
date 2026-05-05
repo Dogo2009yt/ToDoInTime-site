@@ -1,4 +1,4 @@
-.container{
+.main-container {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
     align-items: center;
     background: linear-gradient(90deg,#00F6FF 0%, #002EA3 100%);
     display: flex;
-    width: 90%;
+    width: 92%;
     height: 75vh;
     border-radius: 5vh;
     font-family: "Roboto", sans-serif;
@@ -23,6 +23,11 @@
     color:white;
     text-align: center;
     justify-content: left;
+}
+
+.title p {
+    font-size: 1.15rem;
+    line-height: 1.7;
 }
 
 .mobile{
@@ -69,39 +74,39 @@
     margin-top: 5vh;
     margin-bottom: 5vh;
     align-items: center;
+    justify-content: center;
     background: linear-gradient(90deg, #24292E 0%, #2B3137 100%);
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 50vh;
+    height: 30vh;
     border-radius: 5vh;
     font-family: "Roboto", sans-serif;
+    gap: 2vh;
 }
 
 .gTitle{
-    margin-top: 5vh;
-    color:white;
+    color: white;
     text-align: center;
-    justify-content: left;
 }
 
 .gDesc{
     display: flex;
-    position: relative;
     justify-content: space-between;
-    top:10vh;
+    width: 90%;
+    align-items: center;
 }
 
 .gDesc h4{
-    position: relative;
-    left: 3vw;
     color: white;
     width: 50%;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 .gButton{
-    position: relative;
-    right: 5vh;
     display: flex;
     align-items: center;
     text-align: center;
@@ -154,6 +159,7 @@
         text-align: center;
         margin-top: 3vh;
     }
+
     .card{
         width: 50vw;
         height: 40vh;
@@ -165,7 +171,7 @@
 
     .contentG{
         height: 30vh;
-        justify-content: center; 
+        justify-content: center;
     }
 
     .contentG h1{
@@ -177,9 +183,11 @@
         right: 0;
         top: 0;
     }
+
     .gButton p{
         font-size: larger;
     }
+
     .gDesc{
         position: static;
         top: 0;
