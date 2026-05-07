@@ -1,4 +1,16 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .main-container {
+    flex: 1;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -131,6 +143,112 @@
     display: none;
 }
 
+/* ABOUT US */
+.aboutTitle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 4vh;
+    text-align: center;
+}
+
+.team-section {
+    display: flex;
+    gap: 4vw;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-bottom: 5vh;
+}
+
+.member-card {
+    background: linear-gradient(135deg, #00F6FF 0%, #002EA3 100%);
+    border-radius: 4vh;
+    padding: 3.5vh 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    flex: 1 1 260px;
+    max-width: 340px;
+    gap: 1.2vh;
+    box-shadow: 0 8px 32px rgba(0, 246, 255, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-family: "Roboto", sans-serif;
+}
+
+.member-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 246, 255, 0.28);
+}
+
+.member-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    object-fit: cover;
+    margin-bottom: 0.3vh;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.member-card h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: 0.02em;
+}
+
+.member-role {
+    font-size: 0.82rem;
+    font-weight: 700;
+    opacity: 0.75;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+.member-card p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin: 0;
+    opacity: 0.92;
+}
+
+.member-gh-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    background: white;
+    color: #24292E;
+    border-radius: 3vh;
+    padding: 0.65em 1.5em;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s, transform 0.15s;
+    margin-top: 0.5vh;
+}
+
+.member-gh-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.member-gh-btn:hover {
+    background: #e6e6e6;
+    transform: scale(1.04);
+    color: #24292E;
+}
+
+/* ===================== */
+/* RESPONSIVE            */
+/* ===================== */
+
 @media (max-width: 991px) {
     #carouselExample{
         display: block;
@@ -194,4 +312,42 @@
         width: 100%;
         justify-content: center;
     }
+
+    /* About Us responsive */
+    .team-section {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .member-card {
+        max-width: 80vw;
+        width: 100%;
+    }
+
+    .aboutTitle {
+        font-size: 2.2rem;
+    }
+}
+
+.aboutText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  text-align: center;
+  color: #000000;
+}
+
+/* footer */
+.foot {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
 }
