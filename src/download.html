@@ -63,25 +63,25 @@
             <tbody class="table-group-divider">
                 <tr>
                     <th scope="row">Windows</th>
-                    <td><a href="">
+                    <td><a href="downloads/ToDoInTime_Setup.exe">
                         Download for Windows
                     </a></td>
                 </tr>
                 <tr>
                     <th scope="row">Linux</th>
-                    <td><a href="">
+                    <td><a href="downloads/ToDoInTime.flatpak">
                         Download for Linux
                     </a></td>
                 </tr>
                 <tr>
                     <th scope="row">Android</th>
-                    <td><a href="">
+                    <td><a href="downloads/ToDoInTime.apk">
                         Download for Android
                     </a></td>
                 </tr>
                 <tr>
                     <th scope="row">Source code</th>
-                    <td><a href="">
+                    <td><a href="downloads/Source Code.zip">
                         Download Source code
                     </a></td>
                 </tr>
@@ -117,6 +117,16 @@
         } else {
             downloadFor.textContent = "Download for " + os;
         }
+
+        downloadFor.onclick = () => {
+            if (os === "Linux"){
+                window.location.href = "downloads/ToDoInTime.flatpak";
+            } else if (os === "Windows"){
+                window.location.href = "downloads/ToDoInTime_Setup.exe";
+            } else if (os === "Android"){
+                window.location.href = "downloads/ToDoInTime.apk";
+            }
+        };
     </script>
 </body>
 

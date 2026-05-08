@@ -23,12 +23,12 @@ export default defineConfig({
           { text: 'Complete a task', link: '/Complete a Task' },
         ]
       },
-      {
-        text: 'Advanced',
-        items: [
+      // {
+      //   text: 'Advanced',
+      //   items: [
 
-        ]
-      },
+      //   ]
+      // },
     ],
 
     socialLinks: [
