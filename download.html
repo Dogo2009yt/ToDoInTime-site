@@ -131,6 +131,8 @@
                 window.location.href = "downloads/ToDoInTime_Setup.exe";
             } else if (os === "Android"){
                 window.location.href = "downloads/ToDoInTime.apk";
+            } else if(os === "MacOS" || os === "iOS") {
+                return
             }
             redirect()
         };
